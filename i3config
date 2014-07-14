@@ -45,7 +45,9 @@ bindsym $mod+d exec dmenu_run
 exec $psst nm-applet
 exec $psst indicator-sensors
 exec $psst guake
-exec $psst xautolock -time 9 -locker "i3lock -i /home/rationalash/Pictures/lockscreen.png"
+exec $psst xautolock -time 12 -locker "i3lock -i /home/rationalash/Pictures/lockscreen.png"
+exec $psst i3suspend.sh
+exec $psst feh --randomize --bg-scale /home/rationalash/Pictures/Wallpapers/Space/
 #custom keybindings
 #Ctrl+Alt+e opens emacs
 bindsym $mod+c exec dmenu_run
