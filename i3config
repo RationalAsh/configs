@@ -191,10 +191,11 @@ focus_follows_mouse no
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-	position       top
-	colors{
-		background #120056
-		statusline #9DECFB
-	}
+	font pango:DejaVu Sans Book 10
+	font pango:FontAwesome 10
+	font pango:Fira Mono for Powerline 10
+	font pango:Inconsolata 10
+	position top
+	tray_output none
+        status_command ~/Documents/bumblebee-status-1.9.0/bumblebee-status -m nic network_traffic nvidiagpu disk:home cpu date time pasink -p interval=2.5 time.format="%H:%M CW %V" date.format="%a, %b %d %Y" date.left-click="gsimplecal" home.path=/home -t solarized-powerline
 }
